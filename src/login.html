@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- header -->
+<header class="py-4 bg-tertiary shadow-sm">
+    <div class="container flex items-center justify-between">
+        <!-- logo -->
+         <a href="#">
+            <img src="../assets/logo-fk.svg" alt="" width="350px">
+         </a>
+
+         <!-- search bar -->
+          <div class="w-full max-w-xl flex relative text-gray-400 font-poppins tracking-widest">
+            <span class="absolute left-4 text-lg top-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input class="w-full border border-primary border-r-0 rounded-l-3xl pl-12 py-3 pr-3 focus:outline-none" type="text" placeholder="search">
+            <button class="bg-primary border border-primary text-white px-8 rounded-r-3xl">Search</button>
+          </div>
+
+          <!-- icon -->
+
+          <div class="items-center flex space-x-4">
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Wish List</div>
+                <span class="absolute right-0 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Cart</div>
+                <span class="absolute -right-3 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Account</div>
+                <span class="absolute right-0 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+          </div>
+    </div>
+</header>
+
+<!-- navbar -->
+ <nav class="bg-tertiary font-poppins tracking-widest">
+    <div class="container flex">
+        <!-- all categories -->
+         <div class="bg-primary px-8 py-4 items-center cursor-pointer relative group rounded-t-2xl">
+            <span class="text-white">
+                <i class="fa-solid fa-bars"></i>
+             </span>
+             <span class="capitalize ml-2 text-white">All Categories</span>
+
+             <!-- dropdown -->
+              <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition
+              duration-300 invisible group-hover:visible">
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/sofa.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Sofa</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/bed.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Bedroom</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/office.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Office</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/outdoor-cafe.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Outdoor</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/bed-2.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Matrees</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <img src="../assets/restaurant.svg" alt="" class="w-5 h-5 object-contain">
+                    <span class="text-gray-600 text-sm ml-6">Restaurant</span>
+                </a>
+              </div>
+         </div>
+
+         <!-- nav link -->
+          <div class="flex justify-between items-center flex-grow pl-12">
+            <div class="flex items-center space-x-6 capitalize">
+                <a href="index.html" class="text-primary hover:text-gray-400 transition">Home</a>
+                <a href="shop.html" class="text-primary hover:text-gray-400 transition">Shop</a>
+                <a href="" class="text-primary hover:text-gray-400 transition">Contact Us</a>
+                <a href="" class="text-primary hover:text-gray-400 transition">About Us</a>
+            </div>
+            <a href="" class="text-primary hover:text-gray-400 transition">Login/Register</a>
+          </div>
+
+    </div>
+ </nav>
+
+
+<!-- login -->
+ <div class="container py-16">
+    <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
+        <h3 class="text-2xl uppercase font-medium text-center font-bodoni mb-1">Login</h3>
+        <p class="text-gray-600 text-center mb-6 text-sm font-poppins">login if you are a returing customer</p>
+
+        <!-- form login -->
+         <form action="">
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="text-gray-600 block mb-2">Email Address</label>
+                    <input class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm font-poppins rounded focus:ring-0 focus:border-primary placeholder:text-gray-400" type="text" placeholder="Enter your email address" name="" id="password">
+                </div>
+                <div>
+                    <label for="password" class="text-gray-600 block mb-2">Password</label>
+                    <input class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm font-poppins rounded focus:ring-0 focus:border-primary placeholder:text-gray-400" type="text" placeholder="Enter your password" name="" id="password">
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center mt-6">
+                <div class="flex items-center">
+                    <input type="checkbox" name="" id="" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="" class="text-gray-600 ml-3 cursor-pointer">Remember Me</label>
+                </div>
+                <a href="#" class="text-primary">Forgot Password</a>
+            </div>
+
+            <div class="my-4">
+                <button class="bg-primary text-white block w-full py-2 rounded text-center border border-primary hover:bg-transparent hover:text-primary transition font-bodoni font-medium">login</button>
+            </div>
+         </form>
+
+         <!-- login with -->
+          <div class="relative flex justify-center mt-5">
+            <div class="text-gray-600 uppercase px-3 bg-white relative z-10">Or login with</div>
+            <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="w-1/2 py-2 text-center text-white bg-green-500 rounded uppercase font-roboto font-medium text-sm hover:bg-green-600">Whatsapp</a>
+            <a href="#" class="w-1/2 py-2 text-center text-white bg-red-500 rounded uppercase font-roboto font-medium text-sm hover:bg-red-600">Google</a>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-center">Dont have an account? <a class="text-primary" href="register.html">Register Now</a> </p>
+    </div>
+ </div>
+
+<!-- footer -->
+ 
+<footer class="bg-secondary pt-16 pb-12 border-t border-gray-100">
+    <div class="container grid grid-cols-3">
+        <!-- footer text -->
+            <div class="col-span-1 space-y-8 font-poppins ">
+                <img src="/assets/logo-fk.svg" alt="" width="350px">
+                <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem natus placeat adipisci, explicabo labore reiciendis dicta tempore dolore ratione totam?</p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-10">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+ </footer>
+</body>
+</html>

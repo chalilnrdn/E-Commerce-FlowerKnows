@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- header -->
+<header class="py-4 bg-tertiary shadow-sm">
+    <div class="container flex items-center justify-between">
+        <!-- logo -->
+         <a href="#">
+            <img src="../assets/logo-fk.svg" alt="" width="350px">
+         </a>
+
+         <!-- search bar -->
+          <div class="w-full max-w-xl flex relative text-gray-400 font-poppins tracking-widest">
+            <span class="absolute left-4 text-lg top-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input class="w-full border border-primary border-r-0 rounded-l-3xl pl-12 py-3 pr-3 focus:outline-none" type="text" placeholder="search">
+            <button class="bg-primary border border-primary text-white px-8 rounded-r-3xl">Search</button>
+          </div>
+
+          <!-- icon -->
+
+          <div class="items-center flex space-x-4">
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Wish List</div>
+                <span class="absolute right-0 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Cart</div>
+                <span class="absolute -right-3 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+
+            <a href="" class="text-center text-gray-400 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="text-xs font-poppins leading-5 tracking-wider">Account</div>
+                <span class="absolute right-0 -top-1 w-5 h-5 b bg-primary rounded-full items-center justify-center text-white text-xs">6</span>
+            </a>
+          </div>
+    </div>
+</header>
+
+<!-- navbar -->
+ <nav class="bg-tertiary font-poppins tracking-widest">
+    <div class="container flex">
+        <!-- all categories -->
+         <div class="bg-primary px-8 py-4 items-center cursor-pointer relative group rounded-t-2xl">
+            <span class="text-white">
+                <i class="fa-solid fa-bars"></i>
+             </span>
+             <span class="capitalize ml-2 text-white">All Categories</span>
+
+             <!-- dropdown -->
+              <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition
+              duration-300 invisible group-hover:visible">
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Face</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Eyes</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Lips</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Fragrance</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Accesories</span>
+                </a>
+
+                <a href="" class="flex items-center py-3 px-6 hover:bg-gray-100 transition">
+                    <span class="text-gray-600 text-sm ml-6">Tools</span>
+                </a>
+              </div>
+         </div>
+
+         <!-- nav link -->
+          <div class="flex justify-between items-center flex-grow pl-12">
+            <div class="flex items-center space-x-6 capitalize">
+                <a href="index.html" class="text-primary hover:text-gray-400 transition">Home</a>
+                <a href="shop.html" class="text-primary hover:text-gray-400 transition">Shop</a>
+                <a href="contact.html" class="text-primary hover:text-gray-400 transition">Contact Us</a>
+                <a href="about.html" class="text-primary hover:text-gray-400 transition">About Us</a>
+            </div>
+            <a href="" class="text-primary hover:text-gray-400 transition">Login/Register</a>
+          </div>
+
+    </div>
+ </nav>
+
+<!-- Banner -->
+<div class="bg-cover bg-no-repeat bg-center py-96" style="background-image: url(../assets/banner.png);">
+</div>
+
+<!-- Discover whats new -->
+ <div class="container mt-40">
+    <div class="mb-9">
+        <p class="font-poppins">Discover whats new</p>
+        <h1 class="font-bodoni text-4xl tracking-wider">Strawberry Cupid</h1>
+    </div>
+   
+
+        <div class="grid grid-cols-2">
+                
+            <div class="grid grid-cols-2 gap-10 w-9/12 mx-14">
+                      <!-- single product -->
+                      <div class="bg-white shadow rounded-3xl overflow-hidden group w-full">
+                        <!-- img -->
+                            <div class="relative">
+                                <img src="../assets/all product/product 45.png" alt="" class="w-full">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- desc -->
+                            <div class="pt-4 pb-3 px-4">
+                                <a href="sc-liquid-blush.html">
+                                    <h4 class="uppercase font-medium text-base mb-2 text-gray-800 hover:text-primary transition">Strawberry Cupid Liquid Blush</h4>
+                                </a>
+
+                                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                                    <p class="text-xl text-primary font-semibold">$25.000</p>
+                                    <p class="text-sm text-gray-400 line-through">$35.000</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(150)</div>
+                                </div>
+                            </div>
+                        <!-- button buy -->
+                        <a href="checkout.html" class="block bg-primary  py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+                      </div>
+                      <!-- single product -->
+                      <div class="bg-white shadow rounded-3xl overflow-hidden group w-full">
+                        <!-- img -->
+                            <div class="relative">
+                                <img src="../assets/all product/product 46.png" alt="" class="w-full">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- desc -->
+                            <div class="pt-4 pb-3 px-4">
+                                <a href="sc-handmirror.html">
+                                    <h4 class="uppercase font-medium text-base mb-2 text-gray-800 hover:text-primary transition">Strawberry Cupid Hand Mirror</h4>
+                                </a>
+
+                                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                                    <p class="text-xl text-primary font-semibold">$25.000</p>
+                                    <p class="text-sm text-gray-400 line-through">$35.000</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(150)</div>
+                                </div>
+                            </div>
+                        <!-- button buy -->
+                        <a href="checkout.html" class="block bg-primary  py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+                      </div>
+                      <!-- single product -->
+                      <div class="bg-white shadow rounded-3xl overflow-hidden group w-full">
+                        <!-- img -->
+                            <div class="relative">
+                                <img src="../assets/all product/product 47.png" alt="" class="w-full">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- desc -->
+                            <div class="pt-4 pb-3 px-4">
+                                <a href="sc-parfume.html">
+                                    <h4 class="uppercase font-medium text-base mb-2 text-gray-800 hover:text-primary transition">Strawberry Cupid Perfume</h4>
+                                </a>
+
+                                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                                    <p class="text-xl text-primary font-semibold">$25.000</p>
+                                    <p class="text-sm text-gray-400 line-through">$35.000</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(150)</div>
+                                </div>
+                            </div>
+                        <!-- button buy -->
+                        <a href="checkout.html" class="block bg-primary  py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+                      </div>
+                      <!-- single product -->
+                      <div class="bg-white shadow rounded-3xl overflow-hidden group w-full">
+                        <!-- img -->
+                            <div class="relative">
+                                <img src="../assets/all product/product 48.png" alt="" class="w-full">
+                                <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- desc -->
+                            <div class="pt-4 pb-3 px-4">
+                                <a href="sc-powder.html">
+                                    <h4 class="uppercase font-medium text-base mb-2 text-gray-800 hover:text-primary transition">Strawberry Cupid Pressed Powder</h4>
+                                </a>
+
+                                <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                                    <p class="text-xl text-primary font-semibold">$25.000</p>
+                                    <p class="text-sm text-gray-400 line-through">$35.000</p>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(150)</div>
+                                </div>
+                            </div>
+                        <!-- button buy -->
+                        <a href="checkout.html" class="block bg-primary  py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+                      </div>
+            </div>
+                  
+        
+        
+            <div>
+                <img src="/assets/img-new.png" alt="" >
+            </div>
+        </div>
+ </div>
+
+
+<!-- shop by collection -->
+ <div class="container mb-5 py-12 my-10">
+    <h2 class="text-3xl text-center font-medium text-gray-800 font-bodoni tracking-wider mb-10">Our Collection</h2>
+
+    <div class="grid grid-cols-3 gap-3 font-italiana">
+        <!-- single category -->
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category1.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Midsummer Fairytail</a>
+         </div>
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category2.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Little Angle</a>
+         </div>
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category3.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Swan Ballet</a>
+         </div>
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category4.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Strawberry Rococo</a>
+         </div>
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category5.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Butterfly Cloud Collar</a>
+         </div>
+         <div class="relative rounded-full overflow-hidden group">
+            <img src="../assets/category/category6.png" alt="">
+            <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-medium group-hover:bg-opacity-60 transition" href="">Strawberry Cupid</a>
+         </div>
+         
+    </div>
+
+ </div>
+
+<!-- new arrival -->
+  <div class="container pb-16 my-10">
+        <h2 class="text-3xl text-center font-medium text-gray-800 font-bodoni capitalize mb-10">Top new arrival</h2>
+        <!-- product grid -->
+         <div class="grid grid-cols-4 gap-6">
+            <!-- single product -->
+             <div class="bg-white shadow rounded-3xl overflow-hidden group">
+                <!-- img -->
+                    <div class="relative">
+                        <img src="../assets/all product/product 1.png" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                <!-- desc -->
+                     <div class="pt-4 pb-3 px-4">
+                        <a href="swan-ballet-view.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Swan Ballet Six-Color Makeup Palette</h4>
+                        </a>
+
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$25.000</p>
+                            <p class="text-sm text-gray-400 line-through">$35.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="text-xs text-gray-500 ml-3">(150)</div>
+                        </div>
+                     </div>
+                <!-- button buy -->
+                 <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+             </div>
+            <!-- single product -->
+             <div class="bg-white shadow rounded-3xl overflow-hidden group">
+                <!-- img -->
+                    <div class="relative">
+                        <img src="../assets/all product/product 6.png" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                <!-- desc -->
+                     <div class="pt-4 pb-3 px-4">
+                        <a href="highliter.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Little Angel Embossed Highlighter</h4>
+                        </a>
+
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$25.000</p>
+                            <p class="text-sm text-gray-400 line-through">$35.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="text-xs text-gray-500 ml-3">(150)</div>
+                        </div>
+                     </div>
+                <!-- button buy -->
+                 <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+             </div>
+            <!-- single product -->
+             <div class="bg-white shadow rounded-3xl overflow-hidden group">
+                <!-- img -->
+                    <div class="relative">
+                        <img src="../assets/all product/product 12.png" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                <!-- desc -->
+                     <div class="pt-4 pb-3 px-4">
+                        <a href="little-angle-eyeshadow.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Little Angel 9-Color Eyeshadow Palette</h4>
+                        </a>
+
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$25.000</p>
+                            <p class="text-sm text-gray-400 line-through">$35.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="text-xs text-gray-500 ml-3">(150)</div>
+                        </div>
+                     </div>
+                <!-- button buy -->
+                 <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+             </div>
+            <!-- single product -->
+             <div class="bg-white shadow rounded-3xl overflow-hidden group">
+                <!-- img -->
+                    <div class="relative">
+                        <img src="../assets/all product/product 16.png" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                <!-- desc -->
+                     <div class="pt-4 pb-3 px-4">
+                        <a href="embossed-eyeshadow.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Embossed Five-Color Makeup Palette</h4>
+                        </a>
+
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$25.000</p>
+                            <p class="text-sm text-gray-400 line-through">$35.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="text-xs text-gray-500 ml-3">(150)</div>
+                        </div>
+                     </div>
+                <!-- button buy -->
+                 <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+             </div>
+            
+            
+         </div>
+  </div>
+
+
+<!-- ads section -->
+ <div class="container pb-16 my-10">
+    <a href="#">
+        <img src="/assets/banner 2.png" alt="" class="w-full">
+    </a>
+ </div>
+
+<!-- recomendation -->
+<div class="container pb-16 my-10">
+    <h2 class="text-3xl font-medium text-gray-800 font-bodoni capitalize text-center mb-10">recomendation</h2>
+    <!-- product grid -->
+     <div class="grid grid-cols-4 gap-6">
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 21.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="eyeliner.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Moonlight Mermaid Eyeliner</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 25.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="sc-makeup-pallete.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Strawberry Cupid Makeup Palette</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 35.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="liquid-highlighter.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Midsummer Fairytales Liquid Highlighter</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 40.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="cream-blush.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Little Angel Cream Blush</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 1.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="swan-ballet-view.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Swan Ballet Six-Color Makeup Palette</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 6.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="highliter.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Little Angel Embossed Highlighter</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 12.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="little-angle-eyeshadow.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Little Angel 9-Color Eyeshadow Palette</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        <!-- single product -->
+         <div class="bg-white shadow rounded-3xl overflow-hidden group">
+            <!-- img -->
+                <div class="relative">
+                    <img src="../assets/all product/product 16.png" alt="" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="" class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- desc -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="embossed-eyeshadow.html">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">Embossed Five-Color Makeup Palette</h4>
+                    </a>
+
+                    <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$25.000</p>
+                        <p class="text-sm text-gray-400 line-through">$35.000</p>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                 </div>
+            <!-- button buy -->
+             <a href="checkout.html" class="block bg-primary w-full py-1 text-center text-white border border-primary rounded-b-3xl hover:bg-transparent hover:text-primary transition">Add to cart</a>
+         </div>
+        
+     </div>
+</div>
+
+<!-- footer -->
+ 
+ <footer class="bg-secondary pt-16 pb-12 border-t border-gray-100">
+    <div class="container grid grid-cols-3">
+        <!-- footer text -->
+            <div class="col-span-1 space-y-8 font-poppins ">
+                <img src="/assets/logo-fk.svg" alt="" width="350px">
+                <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem natus placeat adipisci, explicabo labore reiciendis dicta tempore dolore ratione totam?</p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-primary">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-10">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bodoni font-semibold text-primary uppercase tracking-wider">Solution</h3>
+                        <div class="mt-4 space-y-4 font-poppins">
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Marketing</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Analysis</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Commerce</a>
+                            <a href="" class="text-base text-gray-400 hover:text-primary block">Insight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+ </footer>
+
+
+
+
+
+
+
+    
+</body>
+</html>
