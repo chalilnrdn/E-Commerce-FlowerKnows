@@ -2195,6 +2195,18 @@ h1,h2,h3,h4,h5,h6 {
   flex: 7;
 }
 
+.hover\:flex-\[5\]:hover {
+  flex: 5;
+}
+
+.hover\:flex-\[3\]:hover {
+  flex: 3;
+}
+
+.hover\:flex-\[4\]:hover {
+  flex: 4;
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
