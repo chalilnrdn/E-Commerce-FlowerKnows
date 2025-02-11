@@ -2013,6 +2013,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2035,6 +2039,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-gray-200 {
